@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevate Labs Task 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Logo" />
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Our Landing Page</h1>
+                <p>This is a simple, responsive landing page created for the Elevate Labs internship task.</p>
+                <a href="learn-more.html" class="cta-button">Learn More</a>
+            </div>
+        </section>
+    </main>
+    <style>
+      .logo img {
+        height: 48px; /* Adjust as needed */
+        width: auto;
+        display: block;
+      }
+    </style>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Elevate Labs. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+<style>
+  /* General Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f8f9fa;
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+  }
+
+  .logo img {
+    height: 48px;
+    width: auto;
+    display: block;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .nav-links li {
+    position: relative;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 24px;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    display: inline-block;
+  }
+
+  .nav-links a:hover, .nav-links a:focus {
+    background: #007bff;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0,123,255,0.15);
+    outline: none;
+  }
+
+  /* Hamburger menu for mobile */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .hamburger span {
+    width: 28px;
+    height: 3px;
+    background: #222;
+    border-radius: 2px;
+    transition: all 0.3s;
+  }
+
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%);
+    color: #fff;
+    padding: 4rem 2rem 3rem 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 350px;
+  }
+
+  .hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background: #fff;
+    color: #007bff;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border-radius: 32px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 8px rgba(0,123,255,0.10);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.1s;
+    border: none;
+    cursor: pointer;
+  }
+
+  .cta-button:hover, .cta-button:focus {
+    background: #007bff;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(0,123,255,0.18);
+    transform: translateY(-2px) scale(1.04);
+    outline: none;
+  }
+
+  /* Footer */
+  footer {
+    background: #222;
+    color: #fff;
+    padding: 2rem 0 1rem 0;
+    margin-top: auto;
+  }
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .footer-content p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .social-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 24px;
+    transition: background 0.2s, color 0.2s;
+    background: rgba(255,255,255,0.08);
+  }
+
+  .social-links a:hover, .social-links a:focus {
+    background: #007bff;
+    color: #fff;
+    outline: none;
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 900px) {
+    nav {
+      padding: 1rem;
+    }
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .nav-links {
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background: #fff;
+      flex-direction: column;
+      width: 200px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      gap: 0;
+      display: none;
+      z-index: 200;
+    }
+    .nav-links.open {
+      display: flex;
+    }
+    .nav-links li {
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .nav-links a {
+      padding: 1rem 2rem;
+      color: #222;
+    }
+    .hamburger {
+      display: flex;
+    }
+    nav {
+      position: relative;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .hero {
+      padding: 2.5rem 1rem 2rem 1rem;
+      min-height: 220px;
+    }
+    .hero-content h1 {
+      font-size: 1.4rem;
+    }
+    .cta-button {
+      font-size: 1rem;
+      padding: 0.6rem 1.5rem;
+    }
+    .footer-content {
+      font-size: 0.95rem;
+    }
+  }
+</style>
+
+<script>
+  // Hamburger menu toggle for mobile
+  document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', function() {
+        navLinks.classList.toggle('open');
+        hamburger.classList.toggle('active');
+      });
+    }
+
+    // Close nav on link click (mobile)
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', function() {
+        if (window.innerWidth <= 700) {
+          navLinks.classList.remove('open');
+          hamburger.classList.remove('active');
+        }
+      });
+    });
+  });
+</script>
+
+<!-- Responsive Hamburger Menu Button -->
+<script>
+  // Insert hamburger menu button if not present
+  document.addEventListener('DOMContentLoaded', function() {
+    const nav = document.querySelector('nav');
+    if (nav && !nav.querySelector('.hamburger')) {
+      const hamburger = document.createElement('div');
+      hamburger.className = 'hamburger';
+      hamburger.innerHTML = '<span></span><span></span><span></span>';
+      nav.insertBefore(hamburger, nav.querySelector('.nav-links'));
+    }
+  });
+</script>
