@@ -105,7 +105,7 @@ elevate-labs-landing/
 
 1. **Clone the repository**
    ```bash
-   git clone [repository-url]
+   git clone [https://github.com/isham1310/1day-.git]
    cd elevate-labs-landing
    ```
 
